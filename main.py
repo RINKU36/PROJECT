@@ -74,6 +74,10 @@ st.line_chart(df.iloc[:,2])
 st.area_chart(df.iloc[:,3])
 st.line_chart(df.iloc[:,4])
 
+fig,ax=plt.subplots()
+ax.hist(df.iloc[:,3],color="orange",bins=12)
+st.line_chart(df.iloc[:,2])
+st.pyplot(fig)
 
 t=df["PTRATIO"].value_counts()
 st.write(t)
@@ -176,10 +180,5 @@ st.pyplot(fig)
 
 
 
-import matplotlib.pyplot as plt
-t = [7, 10, 8]  
-labels = ["DIS", "AGE", "RM"]
-fig, ax = plt.subplot(211)
-ax.pie(t, labels=labels, autopct="%1.2f%%")
-plt.subplot(211)
+
 
