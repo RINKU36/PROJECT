@@ -186,5 +186,4 @@ labels = ["DIS", "AGE", "RM"]
 fig, ax = plt.subplot(211)
 ax.pie(t, labels=labels, autopct="%1.2f%%")
 plt.subplot(211)
-matplotlib.pyplot.subplot
 
