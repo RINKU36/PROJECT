@@ -12,7 +12,7 @@ st.title("Real Estate Dataset")
 df = pd.read_csv('data.csv')
 st.dataframe(df)
 
-st.title("House price")
+st.write("House price")
 col1, col2 = st.columns(2)
 with col1:
     
